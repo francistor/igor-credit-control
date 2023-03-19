@@ -1,0 +1,2170 @@
+{
+	"version": 1001,
+	"vendors":
+    [
+        {"vendorId": 1001, "vendorName": "Igor"},
+        {"vendorId": 9, "vendorName": "Cisco"},
+        {"vendorId": 10415, "vendorName": "3GPP"}
+    ],
+	"avps":
+	[
+        {
+		"vendorId": 0,
+        "attributes":
+            [
+                {
+                    "code": 1,
+                    "name": "User-Name",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 2,
+                    "name": "User-Password",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 4,
+                    "name": "NAS-IP-Address",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 5,
+                    "name": "NAS-Port",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 6,
+                    "name": "Service-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "Login": 1,
+                        "Framed": 2,
+                        "Callback-Login": 3,
+                        "Callback-Framed": 4
+                    }
+                },
+                {
+                    "code": 8,
+                    "name": "Framed-IP-Address",
+                    "type": "IPv4Address"
+                },
+                {
+                    "code": 9,
+                    "name": "Framed-IP-Netmask",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 11,
+                    "name": "Filter-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 18,
+                    "name": "Reply-Message",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 22,
+                    "name": "Framed-Route",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 25,
+                    "name": "Class",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 27,
+                    "name": "Session-Timeout",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 28,
+                    "name": "Idle-Timeout",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 30,
+                    "name": "Called-Station-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 31,
+                    "name": "Calling-Station-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 32,
+                    "name": "NAS-Identifier",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 33,
+                    "name": "Proxy-State",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 41,
+                    "name": "Acct-Delay-Time",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 44,
+                    "name": "Acct-Session-Id",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 45,
+                    "name": "Acct-Multi-Session-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 46,
+                    "name": "Acct-Session-Time",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 55,
+                    "name": "Event-Timestamp",
+                    "type": "Time"
+                },
+                {
+                    "code": 60,
+                    "name": "CHAP-Challenge",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 61,
+                    "name": "NAS-Port-Type",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "Sync": 0,
+                        "Async": 1,
+                        "Virtual": 5,
+                        "Ethernet": 15
+                    }
+                },
+                {
+                    "code": 64,
+                    "name": "Tunnel-Type",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "PPTP": 1,
+                        "L2F": 2,
+                        "L2TP": 3,
+                        "GRE": 10
+                    }
+                },
+                {
+                    "code": 65,
+                    "name": "Tunnel-Medium-Type",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "IPv4": 1,
+                        "IPv6": 2
+                    }
+                },
+                {
+                    "code": 66,
+                    "name": "Tunnel-Client-Endpoint",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 67,
+                    "name": "Tunnel-Server-Endpoint",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 69,
+                    "name": "Tunnel-Password",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 77,
+                    "name": "Connect-Info",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 81,
+                    "name": "Tunnel-Private-Group-Id",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 82,
+                    "name": "Tunnel-Assignment-Id",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 83,
+                    "name": "Tunnel-Preference",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 85,
+                    "name": "Acct-Interim-Interval",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 87,
+                    "name": "NAS-Port-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 88,
+                    "name": "Framed-Pool",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 90,
+                    "name": "Tunnel-Client-Auth-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 91,
+                    "name": "Tunnel-Server-Auth-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 95,
+                    "name": "NAS-IPv6-Address",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 96,
+                    "name": "Framed-Interface-Id",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 97,
+                    "name": "Framed-IPv6-Prefix",
+                    "type": "IPv6Prefix"
+                },
+                {
+                    "code": 99,
+                    "name": "Framed-IPv6-Route",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 100,
+                    "name": "Framed-IPv6-Pool",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 168,
+                    "name": "Framed-IPv6-Address",
+                    "type": "IPv6Address"
+                },
+                {
+                    "code": 257,
+                    "name": "Host-IP-Address",
+                    "type": "Address"
+                },
+                {
+                    "code": 258,
+                    "name": "Auth-Application-Id",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "Base": 0,
+                        "NASREQ": 1,
+                        "Mobile-IPv4": 2,
+                        "Accounting": 3,
+                        "Credit-Control": 4,
+                        "Gx": 16777238,
+                        "Relay": -1
+                    }
+                },
+                {
+                    "code": 259,
+                    "name": "Acct-Application-Id",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "Base": 0,
+                        "NASREQ": 1,
+                        "Mobile-IPv4": 2,
+                        "Accounting": 3,
+                        "Credit-Control": 4,
+                        "Gx": 16777238,
+                        "Relay": -1
+                    }
+                },
+                {
+                    "code": 260,
+                    "name": "Vendor-Specific-Application-Id",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Vendor-Id": {"minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Application-Id": {"minOccurs": 0, "maxOccurs": 1},
+                        "Acct-Application-Id": {"minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 261,
+                    "name": "Redirect-Host-Usage",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "DONT_CACHE": 0,
+                        "ALL_SESSION": 1,
+                        "ALL_REALM": 2,
+                        "REALM_AND_APPLICATION": 3,
+                        "ALL_APPLICATION": 4,
+                        "ALL_HOST": 5,
+                        "ALL_USER": 4
+                    }
+                },
+                {
+                    "code": 262,
+                    "name": "Redirect-Max-Cache-Time",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 263,
+                    "name": "Session-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 264,
+                    "name": "Origin-Host",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 265,
+                    "name": "Supported-Vendor-Id",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 266,
+                    "name": "Vendor-Id",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 267,
+                    "name": "Firmware-Revision",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 268,
+                    "name": "Result-Code",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 269,
+                    "name": "Product-Name",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 273,
+                    "name": "Disconnect-Cause",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "Rebooting": 0,
+                        "Busy": 1,
+                        "DoNotWantToTalkToYou": 2
+                    }
+                },
+                {
+                    "code": 274,
+                    "name": "Auth-Request-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "AUTHENTICATE_ONLY": 1,
+                        "AUTHORIZE_ONLY": 2,
+                        "AUTHORIZE_AUTHENTICATE": 3
+                    }
+                },
+                {
+                    "code": 279,
+                    "name": "Failed-AVP",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "AVP": {"minOccurs": 1}
+                    }
+                },
+                {
+                    "code": 281,
+                    "name": "Error-Message",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 282,
+                    "name": "Route-Record",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 283,
+                    "name": "Destination-Realm",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 278,
+                    "name": "Origin-State-Id",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 280,
+                    "name": "Proxy-Host",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 281,
+                    "name": "Error-Message",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 284,
+                    "name": "Proxy-Info",
+                    "type": "Grouped",
+                    "group": 
+                    {
+                        "Proxy-Host": {},
+                        "Proxy-State": {}
+                    }
+                },
+                {
+                    "code": 287,
+                    "name": "Accounting-Sub-Session-Id",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 292,
+                    "name": "Redirect-Host",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 293,
+                    "name": "Destination-Host",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 294,
+                    "name": "Error-Reporting-Host",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 295,
+                    "name": "Termination-Cause",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "DIAMETER_LOGOUT": 1,
+                        "DIAMETER_SERVICE_NOT_PROVIDED": 2,
+                        "DIAMETER_BAD_ANSWER": 3,
+                        "DIAMETER_ADMINISTRATIVE": 4,
+                        "DIAMETER_LINK_BROKEN": 5,
+                        "DIAMETER_AUTH_EXPIRED": 6,
+                        "DIAMETER_USER_MOVED": 7,
+                        "DIAMETER_SESSION_TIMEOUT": 8
+                    }
+                },
+                {
+                    "code": 296,
+                    "name": "Origin-Realm",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 299,
+                    "name": "Inband-Security-Id",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "NoInbandSecurity": 0,
+                        "TLS": 1
+                    }				
+                },
+                {
+                    "code": 363,
+                    "name": "Accounting-Input-Octets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 364,
+                    "name": "Accounting-Output-Octets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 365,
+                    "name": "Accounting-Input-Packets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 366,
+                    "name": "Accounting-Output-Packets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 400,
+                    "name": "NAS-Filter-Rule",
+                    "type": "IPFilterRule"
+                },
+                {
+                    "code": 401,
+                    "name": "Tunneling",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Tunnel-Type": {"minOccurs": 1, "maxOccurs": 1},
+                        "Tunnel-Medium-Type": {"minOccurs": 1, "maxOccurs": 1},
+                        "Tunnel-Client-Endpoint": {"minOccurs": 1, "maxOccurs": 1},
+                        "Tunnel-Server-Endpoint": {"minOccurs": 1, "maxOccurs": 1},
+                        "Tunnel-Preference": {}, 
+                        "Tunnel-Client-Auth-Id": {}, 
+                        "Tunnel-Server-Auth-Id": {}, 
+                        "Tunnel-Assignment-Id": {}, 
+                        "Tunnel-Password": {}, 
+                        "Tunnel-Private-Group-Id": {}
+                    }
+                },
+                {
+                    "code": 402,
+                    "name": "CHAP-Auth",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "CHAP-Algorithm": {"minOccurs": 1, "maxOccurs": 1},
+                        "CHAP-Ident": {"minOccurs": 1, "maxOccurs": 1},
+                        "CHAP-Response": {"minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                { 
+                    "code": 403,
+                    "name": "CHAP-Algorithm",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "CHAP-With-MD5": 5
+                    }
+                },
+                {
+                    "code": 404,
+                    "name": "CHAP-Ident",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 405,
+                    "name": "CHAP-Response",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 407,
+                    "name": "QoS-Filter-Rule",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 411,
+                    "name": "CC-Correlation-Id",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 412,
+                    "name": "CC-Input-Octets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 413,
+                    "name": "CC-Money",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Unit-Value": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Currency-Code": {}
+                    }
+                },
+                {
+                    "code": 414,
+                    "name": "CC-Output-Octets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 415,
+                    "name": "CC-Request-Number",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 416,
+                    "name": "CC-Request-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "Initial": 1,
+                        "Update": 2,
+                        "Termination": 3,
+                        "Event": 4
+                    }
+                },
+                {
+                    "code": 417,
+                    "name": "CC-Service-Specific-Units",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 418,
+                    "name": "CC-Session-Failover",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "FAILOVER_NOT_SUPPORTED": 0,
+                        "FAILOVER_SUPPORTED": 1
+                    }
+                },
+                {
+                    "code": 419,
+                    "name": "CC-Sub-Session-Id",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 420,
+                    "name": "CC-Time",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 421,
+                    "name": "CC-Total-Octets",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 422,
+                    "name": "Check-Balance-Result",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "ENOUGH_CREDIT": 0,
+                        "NO_CREDIT": 1
+                    }
+                },
+                {
+                    "code": 423,
+                    "name": "Cost-Information",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Unit-Value": {},
+                        "Currency-Code": {},
+                        "Cost-Unit": {}
+                    }
+                },
+                {
+                    "code": 427,
+                    "name": "Credit-Control-Failure-Handling",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "TERMINATE": 0,
+                        "CONTINUE": 1,
+                        "RETRY_AND_TERMINATE": 2
+                    }
+                },
+                {
+                    "code": 428,
+                    "name": "Direct-Debiting-Failure-Handling",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "TERMINATE_OR_BUFFER": 0,
+                        "CONTINUE": 1
+                    }
+                },
+                {
+                    "code": 429,
+                    "name": "Exponent",
+                    "type": "Integer32"
+                },
+                {
+                    "code": 430,
+                    "name": "Final-Unit-Indication",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Final-Unit-Action": {},
+                        "Restriction-Filter-Rule": {},
+                        "Filter-Id": {},
+                        "Redirect-Server": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 431,
+                    "name": "Granted-Service-Unit",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Tariff-Time-Change": {},
+                        "CC-Time": {},
+                        "CC-Money": {},
+                        "CC-Total-Octets": {},
+                        "CC-Input-Octets": {},
+                        "CC-Output-Octets": {},
+                        "CC-Service-Specific-Units": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 432,
+                    "name": "Rating-Group",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 433,
+                    "name": "Redirect-Address-Type",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "IPV4": 0,
+                        "IPV6": 1,
+                        "URL": 2,
+                        "SIP_URI": 3
+                    }
+                },
+                {
+                    "code": 434,
+                    "name": "Redirect-Server",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Redirect-Address-Type": {},
+                        "Redirect-Server-Address": {}
+                    }
+                },
+                {
+                    "code": 433,
+                    "name": "Redirect-Server-Address",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 436,
+                    "name": "Requested-Action",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "DIRECT_DEBITING": 0,
+                        "REFUND_ACCOUNT": 1,
+                        "CHECK_BALANCE": 2,
+                        "PRICE_ENQUIRY": 3
+                    }
+                },
+                {
+                    "code": 437,
+                    "name": "Requested-Service-Unit",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "CC-Time": {},
+                        "CC-Money": {}, 
+                        "CC-Total-Octets": {},
+                        "CC-Input-Octets": {},
+                        "CC-Output-Octets": {},
+                        "CC-Service-Specific-Units": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 439,
+                    "name": "Service-Identifier",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 440,
+                    "name": "Service-Parameter-Info",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Service-Parameter-Type": {},
+                        "Service-Parameter-Value": {}
+                    }
+                },
+                {
+                    "code": 441,
+                    "name": "Service-Parameter-Type",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 442,
+                    "name": "Service-Parameter-Value",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 443,
+                    "name": "Subscription-Id",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Subscription-Id-Type": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Subscription-Id-Data": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 444,
+                    "name": "Subscription-Id-Data",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 445,
+                    "name": "Unit-Value",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Value-Digits": {},
+                        "Exponent": {}
+                        
+                    }
+                },
+                {
+                    "code": 446,
+                    "name": "Used-Service-Unit",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Tariff-Change-Usage": {},
+                        "CC-Time": {},
+                        "CC-Money": {},
+                        "CC-Total-Octets": {},
+                        "CC-Input-Octets": {},
+                        "CC-Output-Octets": {},
+                        "CC-Service-Specific-Units": {}
+                    }
+                },
+                {
+                    "code": 447,
+                    "name": "Value-Digits",
+                    "type": "Integer64"
+                },
+                {
+                    "code": 448,
+                    "name": "Validity-Time",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 449,
+                    "name": "Final-Unit-Action",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "TERMINATE": 0,
+                        "REDIRECT": 1,
+                        "RESTRICT_ACCESS": 2
+                    }
+                },
+                {
+                    "code": 452,
+                    "name": "Tariff-Change-Usage",
+                    "type": "Enumerated",
+                    "enumValues": 
+                    {
+                        "UNIT_BEFORE_TARIFF_CHANGE": 0,
+                        "UNIT_AFTER_TARIFF_CHANGE": 1,
+                        "UNIT_INDETERMINATE": 2
+                    }
+                },
+                {
+                    "code": 456,
+                    "name": "Multiple-Services-Credit-Control",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Granted-Service-Unit": {},
+                        "Requested-Service-Unit": {},
+                        "Used-Service-Unit": {},
+                        "Tariff-Change-Usage": {},
+                        "Service-Identifier": {},
+                        "Rating-Group": {},
+                        "G-S-U-Pool-Reference": {},
+                        "Validity-Time": {},
+                        "Result-Code": {},
+                        "Final-Unit-Indication": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 457,
+                    "name": "G-S-U-Pool-Reference",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "G-S-U-Pool-Identifier": {},
+                        "CC-Unit-Type": {},
+                        "Unit-Value": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 458,
+                    "name": "User-Equipment-Info",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "User-Equipment-Info-Type": {},
+                        "User-Equipment-Info-Value": {},
+                        "Unit-Value": {},
+                        "AVP": {}
+                    }
+                },
+                {
+                    "code": 459,
+                    "name": "User-Equipment-Info-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "IMEISV": 0,
+                        "MAC": 1,
+                        "EUI64": 2,
+                        "MODIFIED_EUI64": 3
+                    }
+                },
+                {
+                    "code": 460,
+                    "name": "User-Equipment-Info-Value",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 461,
+                    "name": "Service-Context-Id",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 480,
+                    "name": "Accounting-Record-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "EVENT_RECORD": 1,
+                        "START_RECORD": 2,
+                        "INTERIM_RECORD": 3,
+                        "STOP_RECORD": 4
+                    }
+                },
+                {
+                    "code": 450,
+                    "name": "Subscription-Id-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "EndUserE164": 0,
+                        "EndUserIMSI": 1,
+                        "EndUserSIPURI": 2,
+                        "EndUserNAI": 3,
+                        "EndUserPrivate": 4
+                    }
+                },
+                {
+                    "code": 455,
+                    "name": "Multiple-Services-Indicator",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "MULTIPLE_SERVICES_NOT_SUPPORTED": 0,
+                        "MULTIPLE_SERVICES_SUPPORTED": 1
+                    }
+                },
+
+                {
+                    "code": 483,
+                    "name": "Accounting-Realtime-Required",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "DELIVER_AND_GRANT": 1,
+                        "GRANT_AND_STORE": 2,
+                        "GRANT_AND_LOSE": 3
+                    }
+                },
+                {
+                    "code": 485,
+                    "name": "Accounting-Record-Number",
+                    "type": "Unsigned32"
+                }
+            ]
+        },
+        {
+        "vendorId": 10415,
+        "attributes": 
+            [
+                {
+                    "code": 505,
+                    "name": "AF-Charging-Identifier",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 507,
+                    "name": "Flow-Description",
+                    "type": "IPFilterRule"
+                },
+                {
+                    "code": 509,
+                    "name": "Flow-Number",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 510,
+                    "name": "Flows",
+                    "type": "Grouped",
+                    "group":{
+                        "3GPP-Media-Component-Number": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Flow-Number": {},
+                        "Final-Unit-Action": {"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 511,
+                    "name": "Flow-Status",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "ENABLED-UPLINK": 0,
+                        "ENABLED-DOWNLINK": 1,
+                        "ENABLED": 2,
+                        "DISABLED": 3,
+                        "REMOVED": 4
+                    }
+                },
+                {
+                    "code": 515,
+                    "name": "Max-Requested-Bandwidth-UL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 516,
+                    "name": "Max-Requested-Bandwidth-DL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 518,
+                    "name": "Media-Component-Number",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 529,
+                    "name": "AF-Signalling-Protocol",
+                    "type": "Enumerated",
+                    "enumValues":{
+                        "NO_INFORMATION": 0,
+                        "SIP": 1
+                    }
+                },
+                {
+                    "code": 531,
+                    "name": "Sponsor-Identity",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 532,
+                    "name": "Application-Service-Provider-Identity",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 536,
+                    "name": "Required-Access-Info",
+                    "type": "Enumerated",
+                    "enumValues":{
+                        "USER_LOCATION": 0,
+                        "MS_TIME_ZONE": 1
+                    }
+                },
+                {
+                    "code": 1002,
+                    "name": "Charging-Rule-Remove",
+                    "type": "Grouped",
+                    "group": {
+                        "Charging-Rule-Name": {"minOccurs": 1, "maxOccurs": 1},
+                        "Charging-Rule-Base-Name": {"minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1003,
+                    "name": "Charging-Rule-Definition",
+                    "type": "Grouped",
+                    "group": {
+                        "3GPP-Charging-Rule-Name":{"minOccurs": 1, "maxOccurs": 1},
+                        "Service-Identifier":{"maxOccurs": 1},
+                        "Rating-Group":{"maxOccurs": 1},
+                        "3GPP-Flow-Information":{},
+                        "3GPP-Flow-Status":{"maxOccurs": 1},
+                        "3GPP-QoS-Information":{"maxOccurs": 1},
+                        "3GPP-PS-to-CS-Session-Continuity":{"maxOccurs": 1},
+                        "3GPP-Reporting-Level":{"maxOccurs": 1},
+                        "3GPP-Online":{"maxOccurs": 1},
+                        "3GPP-Offline":{"maxOccurs": 1},
+                        "3GPP-Metering-Method":{"maxOccurs": 1},
+                        "3GPP-Precedence":{"maxOccurs": 1},
+                        "3GPP-AF-Charging-Identifier":{"maxOccurs": 1},
+                        "3GPP-Flows":{},
+                        "3GPP-Monitoring-Key":{"maxOccurs": 1},
+                        "3GPP-AF-Signalling-Protocol":{"maxOccurs": 1},
+                        "3GPP-Sponsor-Identity":{"maxOccurs": 1},
+                        "3GPP-Application-Service-Provider-Identity":{"maxOccurs": 1},
+                        "3GPP-Required-Access-Info":{}
+                    }
+                },
+                {
+                    "code": 1004,
+                    "name": "Charging-Rule-Base-Name",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 1005,
+                    "name": "Charging-Rule-Name",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1006,
+                    "name": "Event-Trigger",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "SGSN_CHANGE": 0,
+                        "QOS_CHANGE": 1,
+                        "RAT_CHANGE":2,
+                        "TFT_CHANGE": 3,
+                        "PLMN_CHANGE": 4,
+                        "LOSS_OF_BEARER": 5,
+                        "RECOVERY_OF_BEARER": 6,
+                        "IP-CAN_CHANGE": 7,
+                        "QOS_CHANGE_EXCEEDING_AUTHORIZATION": 11,
+                        "RAI_CHANGE": 12,
+                        "USER_LOCATION_CHANGE": 13,
+                        "NO_EVENT_TRIGGERS": 14,
+                        "OUT_OF_CREDIT": 15,
+                        "REALLOCATION_OF_CREDIT": 16,
+                        "REVALIDATION_TIMEOUT": 17,
+                        "UE_IP_ADDRESS_ALLOCATE": 18,
+                        "UE_IP_ADDRESS_RELEASE": 19,
+                        "DEFAULT_EPS_BEARER_QOS_CHANGE": 20,
+                        "AN_GW_CHANGE": 21,
+                        "SUCCESSFUL_RESOURCE_ALLOCATION": 22,
+                        "RESOURCE_MODIFICATION_REQUEST": 23,
+                        "PGW_TRACE_CONTROL": 24,
+                        "UE_TIME_ZONE_CHANGE": 25,
+                        "TAI_CHANGE": 26,
+                        "ECGI_CHANGE": 27,
+                        "CHARGING_CORRELATION_EXCHANGE": 28,
+                        "APN-AMBR_MODIFICATION_FAILURE": 29,
+                        "USER_CSG_INFORMATION_CHANGE": 30,
+                        "USAGE_REPORT": 33,
+                        "DEFAULT-EPS-BEARER-QOS_MODIFICATION_FAILURE": 34,
+                        "USER_CSG_HYBRID_SUBSCRIBED_INFORMATION_CHANGE": 35,
+                        "USER_CSG_HYBRID_UNSUBSCRIBED_INFORMATION_CHANGE": 36,
+                        "ROUTING_RULE_CHANGE": 37,
+                        "APPLICATION_START": 39,
+                        "APPLICATION_STOP": 40,
+                        "ADC_REVALIDATION_TIMEOUT": 41,
+                        "CS_TO_PS_HANDOVER": 42,
+                        "UE_LOCAL_IP_ADDRESS_CHANGE": 43,
+                        "HENB_LOCAL_IP_ADDRESS_CHANGE": 44,
+                        "ACCESS_NETWORK_INFO_REPORT": 45
+                    }
+                },
+                {
+                    "code": 1007,
+                    "name": "Metering-Method",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "DURATION": 0,
+                        "VOLUME": 1,
+                        "DURATION_VOLUME": 2
+                    }
+                },
+                {
+                    "code": 1008,
+                    "name": "Offline",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "DISABLE_OFFLINE": 0,
+                        "ENABLE_OFFLINE": 1
+                    }
+                },
+                {
+                    "code": 1009,
+                    "name": "Online",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "DISABLE_ONLINE": 0,
+                        "ENABLE_ONLINE": 1
+                    }
+                },
+                {
+                    "code": 1010,
+                    "name": "Precedence",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1011,
+                    "name": "Reporting-Level",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "SERVICE_IDENTIFIER_LEVEL": 0,
+                        "RATING_GROUP_LEVEL": 1,
+                        "SPONSORED_CONNECTIVITY_LEVEL": 2
+                    }
+                },
+                {
+                    "code": 1012,
+                    "name": "TFT-Filter",
+                    "type": "IPFilterRule"
+                },
+                {
+                    "code": 1013,
+                    "name": "TFT-Packet-Filter-Information",
+                    "type": "Grouped",
+                    "group": {
+                        "3GPP-Precedence": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-TFT-Filter": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-ToS-Traffic-Class": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Security-Parameter-Index": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Flow-Label": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Flow-Direction": {"minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1014,
+                    "name": "ToS-Traffic-Class",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1015,
+                    "name": "PDP-Session-Operation",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "PDP_SESSION_TERMINATION": 0
+                    }
+                },
+                {
+                    "code": 1016,
+                    "name": "QoS-Information",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "3GPP-QoS-Class-Identifier":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Max-Requested-Bandwidth-UL":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Requested-Bandwidth-DL":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Guaranteed-Bitrate-UL":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Guaranteed-Bitrate-DL":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Bearer-Identifier":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Allocation-Retention-Priority":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-APN-Aggregate-Max-Bitrate-UL":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-APN-Aggregate-Max-Bitrate-DL":{"minOccurs": 1, "maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1019,
+                    "name": "PCC-Rule-Status",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "ACTIVE": 0,
+                        "INACTIVE": 1,
+                        "PCC-Rule-Status": 2
+                    }
+                },
+                {
+                    "code": 1020,
+                    "name": "Bearer-Identifier",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1025,
+                    "name": "Guaranteed-Bitrate-DL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1026,
+                    "name": "Guaranteed-Bitrate-UL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1027,
+                    "name": "IP-CAN-Type",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "3GPP-GPRS": 0,
+                        "DOCSIS": 1,
+                        "xDSL": 2,
+                        "WiMAX": 3,
+                        "3GPP2": 4,
+                        "3GPP-EPS": 5,
+                        "Non-3GPP-EPS": 6
+                    }
+                },
+                {
+                    "code": 1028,
+                    "name": "QoS-Class-Identifier",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "CLASS0": 0,
+                        "CLASS1": 1,
+                        "CLASS2": 2,
+                        "CLASS3": 3,
+                        "CLASS4": 4,
+                        "CLASS5": 5,
+                        "CLASS6": 6,
+                        "CLASS7": 7,
+                        "CLASS8": 8,
+                        "CLASS9": 9
+                    }
+                },
+                {
+                    "code": 1030,
+                    "name": "Rule-Failure-Code",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "UNKNOWN_RULE_NAME": 1,
+                        "RATING_GROUP_ERROR": 2,
+                        "SERVICE_IDENTIFIER_ERROR": 3,
+                        "GW/PCEF_MALFUNCTION": 4,
+                        "RESOURCES_LIMITATION": 5,
+                        "MAX_NR_BEARERS_REACHED": 6,
+                        "UNKNOWN_BEARER_ID": 7,
+                        "MISSING_BEARER_ID": 8,
+                        "MISSING_FLOW_DESCRIPTION": 9,
+                        "RESOURCE_ALLOCATION_FAILURE": 10,
+                        "UNSUCCESSFUL_QOS_VALIDATION": 11,
+                        "INCORRECT_FLOW_INFORMATION": 12,
+                        "PS_TO_CS_HANDOVER": 13,
+                        "TDF_APPLICATION_IDENTIFIER_ERROR": 14,
+                        "NO_BEARER_BOUND": 15,
+                        "FILTER_RESTRICTIONS": 16
+                    }
+                },
+                {
+                    "code": 1032,
+                    "name": "3G-RAT-Type",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "UTRAN": 1,
+                        "GERAN": 2,
+                        "WLAN": 3,
+                        "GAN": 4,
+                        "HSPA-Evolution": 5,
+                        "EUTRAN": 6,
+                        "Virtual": 7,
+                        "IEEE-802-16e": 101,
+                        "3GPP2-eHRPD": 102,
+                        "3GPP2-HRPD": 103,
+                        "3GPP2-1xRTT": 104,
+                        "3GPP2-UMB": 105
+                    }
+                },
+                {
+                    "code": 1034,
+                    "name": "Allocation-Retention-Priority",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Priority-Level":{"minOccurs": 1, "maxOccurs": 1},
+                        "Pre-emption-Capability":{"maxOccurs": 1},
+                        "Pre-emption-Vulnerability":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1040,
+                    "name": "APN-Aggregate-Max-Bitrate-DL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1041,
+                    "name": "APN-Aggregate-Max-Bitrate-UL",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1042,
+                    "name": "Revalidation-Time",
+                    "type": "Time"
+                },
+                {
+                    "code": 1043,
+                    "name": "Rule-Activation-Time",
+                    "type": "Time"
+                },
+                {
+                    "code": 1044,
+                    "name": "Rule-Deactivation-Time",
+                    "type": "Time"
+                },
+                {
+                    "code": 1046,
+                    "name": "Priority-Level",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 1047,
+                    "name": "Pre-emption-Capability",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "enabled": 0,
+                        "disabled": 1
+                    }
+                },
+                {
+                    "code": 1048,
+                    "name": "Pre-emption-Vulnerability",
+                    "type": "Enumerated",
+                    "enumValues":
+                    {
+                        "enabled": 0,
+                        "disabled": 1
+                    }
+                },
+                {
+                    "code": 1049,
+                    "name": "Default-EPS-Bearer-QoS",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "3GPP-QoS-Class-Identifier":{"maxOccurs": 1},
+                        "3GPP-Allocation-Retention-Priority":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1050,
+                    "name": "AN-GW-Address",
+                    "type": "Address"
+                },
+                {
+                    "code": 1051,
+                    "name": "Charging-Rule-Install",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "3GPP-Charging-Rule-Definition":{},
+                        "3GPP-Charging-Rule-Name":{},
+                        "3GPP-Charging-Rule-Base-Name":{},
+                        "3GPP-Bearer-Identifier":{"maxOccurs": 1},
+                        "3GPP-Rule-Activation-Time":{"maxOccurs": 1},
+                        "3GPP-Rule-Deactivation-Time":{"maxOccurs": 1},
+                        "3GPP-Resource-Allocation-Notification":{"maxOccurs": 1},
+                        "3GPP-Charging-Correlation-Indicator":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1053,
+                    "name": "QoS-Rule-Definition",
+                    "type": "Grouped",
+                    "group": {
+                        "3GPP-QoS-Rule-Name": {"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Flow-Information": {"maxOccurs": 1},
+                        "3GPP-Precedence": {"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1054,
+                    "name": "QoS-Rule-Name",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1055,
+                    "name": "QoS-Rule-Report",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "3GPP-QoS-Rule-Name":{},
+                        "3GPP-QoS-Rule-Base-Name":{},
+                        "3GPP-PCC-Rule-Status":{"maxOccurs": 1},
+                        "3GPP-Rule-Failure-Code":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1056,
+                    "name": "Security-Parameter-Index",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1057,
+                    "name": "Flow-Label",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1058,
+                    "name": "Flow-Information",
+                    "type": "Grouped",
+                    "group": {
+                        "3GPP-Flow-Description":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Packet-Filter-Identifier":{"maxOccurs": 1},
+                        "3GPP-ToS-Traffic-Class":{"maxOccurs": 1},
+                        "3GPP-Security-Parameter-Index":{"maxOccurs": 1},
+                        "3GPP-Flow-Label":{"maxOccurs": 1},
+                        "3GPP-Flow-Direction":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 1059,
+                    "name": "Packet-Filter-Content",
+                    "type": "IPFilterRule"
+                },
+                {
+                    "code": 1060,
+                    "name": "Packet-Filter-Identifier",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1063,
+                    "name": "Resource-Allocation-Notification",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "ENABLE_NOTIFICATION": 0
+                    }
+                },
+                {
+                    "code": 1066,
+                    "name": "Monitoring-Key",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 1073,
+                    "name": "Charging-Correlation-Indicator",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "CHARGING_IDENTIFIER_REQUIRED": 1
+                    }
+                },
+                {
+                    "code": 1074,
+                    "name": "QoS-Rule-Base-Name",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 1075,
+                    "name": "Routing-Rule-Remove",
+                    "type": "Grouped",
+                    "group": {
+                        "3GPP-Routing-Rule-Identifier":{},
+                        "AVP":{}
+                    }
+                },
+                {
+                    "code": 1080,
+                    "name": "Flow-Direction",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "UNSPECIFIED": 0,
+                        "DOWNLINK": 1,
+                        "UPLINK": 2,
+                        "BIDIRECTIONAL": 3
+                    }
+                },
+                {
+                    "code": 1099,
+                    "name": "PS-to-CS-Session-Continuity",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "VIDEO_PS2CS_CONT_CANDIDATE": 0
+                    }
+                }
+            ]
+        },
+        {
+		"vendorId": 1001,
+        "attributes":
+            [
+                {
+                    "code": 1,
+                    "name": "myOctetString",
+                    "type": "OctetString"
+                },
+                {
+                    "code": 2,
+                    "name": "myInteger32",
+                    "type": "Integer32"
+                },
+                {
+                    "code": 3,
+                    "name": "myInteger64",
+                    "type": "Integer64"
+                },
+                {
+                    "code": 4,
+                    "name": "myUnsigned32",
+                    "type": "Unsigned32"
+                },
+                {
+                    "code": 5,
+                    "name": "myUnsigned64",
+                    "type": "Unsigned64"
+                },
+                {
+                    "code": 6,
+                    "name": "myFloat32",
+                    "type": "Float32"
+                },
+                {
+                    "code": 7,
+                    "name": "myFloat64",
+                    "type": "Float64"
+                },
+                {
+                    "code": 8,
+                    "name": "myAddress",
+                    "type": "Address"
+                },
+                {
+                    "code": 9,
+                    "name": "myTime",
+                    "type": "Time"
+                },
+                {
+                    "code": 10,
+                    "name": "myString",
+                    "type": "UTF8String"
+                },
+                {
+                    "code": 11,
+                    "name": "myDiameterIdentity",
+                    "type": "DiamIdent"
+                },
+                {
+                    "code": 12,
+                    "name": "myDiameterURI",
+                    "type": "DiameterURI"
+                },
+                {
+                    "code": 13,
+                    "name": "myIPFilterRule",
+                    "type": "IPFilterRule"
+                },
+                {
+                    "code": 14,
+                    "name": "myIPv4Address",
+                    "type": "IPv4Address"
+                },
+                {
+                    "code": 15,
+                    "name": "myIPv6Address",
+                    "type": "IPv6Address"
+                },
+                {
+                    "code": 16,
+                    "name": "myIPv6Prefix",
+                    "type": "IPv6Prefix"
+                },
+                {
+                    "code": 17,
+                    "name": "myEnumerated",
+                    "type": "Enumerated",
+                    "enumValues": {
+                        "zero": 0,
+                        "one": 1,
+                        "two": 2
+                    }
+                },
+                {
+                    "code": 18,
+                    "name": "myGrouped",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Igor-myInteger32":{"minOccurs": 1, "maxOccurs": 1},
+                        "Igor-myString":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 19,
+                    "name": "myGroupedInGrouped",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Igor-myInteger32":{"minOccurs": 1, "maxOccurs": 1},
+                        "Igor-myString":{"maxOccurs": 1},
+                        "Igor-myGrouped":{"maxOccurs": 1}
+                    }
+                },
+                {
+                    "code": 20,
+                    "name": "myTestAllGrouped",
+                    "type": "Grouped",
+                    "group":
+                    {
+                        "Igor-myOctetString": {},
+                        "Igor-myInteger32": {},
+                        "Igor-myInteger64": {},
+                        "Igor-myUnsigned32": {},
+                        "Igor-myUnsigned64": {},
+                        "Igor-myFloat32": {},
+                        "Igor-myFloat64": {},
+                        "Igor-myAddress": {},
+                        "Igor-myTime": {},
+                        "Igor-myString": {},
+                        "Igor-myDiameterIdentity": {},
+                        "Igor-myDiameterURI": {},
+                        "Igor-myIPFilterRule": {},
+                        "Igor-myIPv4Address": {},
+                        "Igor-myIPv6Address": {},
+                        "Igor-myIPv6Prefix": {},
+                        "Igor-myEnumerated": {}
+                    }
+                },
+                {
+                    "code": 21,
+                    "name": "Command",
+                    "type": "UTF8String"
+                }
+
+            ]
+        },
+        {
+        "vendorId": 9,
+        "attributes": 
+            [
+                {
+                    "code": 1,
+                    "name": "bigparameter",
+                    "type": "UTF8String"
+                }
+            ]
+        }
+    ],
+	"applications":
+	[
+		{
+			"name":"Base",
+			"code": 0,
+			"commands":
+			[
+				{
+					"code": 257,
+					"name": "Capabilities-Exchange",
+					"request":
+					{
+						"Origin-Host": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Host-IP-Address": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Vendor-Id":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Product-Name":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-State-Id":{"mandatory": true, "maxOccurs": 1},
+						"Supported-Vendor-Id":{"mandatory": true},
+						"Auth-Application-Id":{"mandatory": true},
+						"Inband-Security-Id":{},
+						"Acct-Application-Id":{"mandatory": true},
+						"Vendor-Specific-Application-Id":{},
+						"Firmware-Revision":{"maxOccurs": 1},
+						"AVP":{}
+					},
+					"response":
+					{	
+						"Result-Code":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Host-IP-Address": {"minOccurs": 1, "maxOccurs": 1},
+						"Vendor-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Product-Name":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-State-Id":{"maxOccurs": 1},
+						"Error-Message":{"maxOccurs": 1},
+						"Failed-AVP":{},
+						"Supported-Vendor-Id":{},
+						"Auth-Application-Id":{},
+						"Inband-Security-Id":{},
+						"Acct-Application-Id":{},
+						"Vendor-Specific-Application-Id":{},
+						"Firmware-Revision":{"maxOccurs": 1},
+						"AVP":{}
+					}
+				},
+				{
+					"code": 280,
+					"name": "Device-Watchdog",
+					"request":
+					{
+						"Origin-Host": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Origin-State-Id":{"maxOccurs": 1}
+					},
+					"response":
+					{
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+                        "Result-Code":{"maxOccurs": 1},
+						"Error-Message":{"maxOccurs": 1},		
+						"Failed-AVP":{},
+						"Origin-State-Id":{"maxOccurs": 1}
+					}
+				},
+				{
+					"code": 282,
+					"name": "Disconnect-Peer",
+					"request":
+					{
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Disconnect-Cause":{"maxOccurs": 1}
+					},
+					"response":
+					{
+						"Result-Code":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},	
+						"Error-Message":{"maxOccurs": 1},		
+						"Failed-AVP":{}
+					}
+				}
+			]
+		},
+		{
+			"name": "NASREQ",
+			"code": 1,
+			"appType": "auth",
+			"commands": 
+			[
+				{
+					"code": 265,
+					"name": "AA",
+					"request":
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Destination-Realm":{"minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Request-Type": {"minOccurs": 1, "maxOccurs": 1},
+                        "Destination-Host": {"minOccurs": 1, "maxOccurs": 1},
+                        "NAS-Identifier": {"minOccurs": 1, "maxOccurs": 1},
+	                    "NAS-IP-Address": {"minOccurs": 1, "maxOccurs": 1},
+	                    "NAS-IPv6-Address": {"minOccurs": 1, "maxOccurs": 1},
+	                    "NAS-Port": {"minOccurs": 1, "maxOccurs": 1},
+	                    "NAS-Port-Id": {"minOccurs": 1, "maxOccurs": 1},
+	                    "NAS-Port-Type": {"minOccurs": 1, "maxOccurs": 1},
+	                    "User-Name": {"minOccurs": 1, "maxOccurs": 1},
+	                    "User-Password": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Service-Type": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Called-Station-Id": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Calling-Station-Id": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Connect-Info": {"minOccurs": 1, "maxOccurs": 1},
+	                    "CHAP-Auth": {"minOccurs": 1, "maxOccurs": 1},
+	                    "CHAP-Challenge": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Framed-Interface-Id": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Framed-IP-Address": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Framed-IPv6-Prefix": {"minOccurs": 1, "maxOccurs": 1},
+	                    "Framed-IP-Netmask": {"minOccurs": 1, "maxOccurs": 1}
+					},
+					"response": 
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm": {"minOccurs": 1, "maxOccurs": 1},
+						"Auth-Application-Id": {"minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Request-Type": {"minOccurs": 1, "maxOccurs": 1},
+                        "Result-Code": {"minOccurs": 1, "maxOccurs": 1},
+						"User-Name": {"minOccurs": 1, "maxOccurs": 1},
+                        "Service-Type": {"minOccurs": 1, "maxOccurs": 1},
+                       	"Class": {"minOccurs": 1},
+                        "Acct-Interim-Interval": {},
+                        "Error-Message": {},
+                        "Failed-AVP": {},
+                        "Idle-Timeout": {},
+						"Session-Timeout": {},
+                        "Reply-Message": {},
+                        "Filter-Id": {},
+		                "Framed-Interface-Id": {},
+                        "Framed-IP-Address": {},
+                        "Framed-IPv6-Prefix": {},
+                        "Framed-IPv6-Pool": {},
+                        "Framed-IPv6-Route": {},
+                        "Framed-IP-Netmask": {},
+                        "Framed-Route": {},
+                        "Framed-Pool": {}
+					}
+				},
+				{
+					"code": 271,
+					"name": "AC",
+					"request":
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Destination-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Destination-Host": {},
+						"Accounting-Record-Type": {},
+                        "Accounting-Record-Number": {},
+                        "Acct-Application-Id": {}, 
+                        "User-Name": {},
+                        "Accounting-Sub-Session-Id": {},
+                        "Acct-Session-Id": {}, 
+                        "Acct-Multi-Session-Id": {},
+                        "Origin-State-Id": {},
+                        "Event-Timestamp": {}, 
+                        "Acct-Delay-Time": {},
+                        "NAS-Identifier": {},
+                        "NAS-IP-Address": {},
+                        "NAS-IPv6-Address": {},
+                        "NAS-Port": {},
+                        "NAS-Port-Id": {},
+                        "NAS-Port-Type": {},
+                        "Class": {},
+                        "Service-Type": {},
+                        "Termination-Cause": {},
+                        "Accounting-Input-Octets": {},
+                        "Accounting-Input-Packets": {},
+                        "Accounting-Output-Octets": {},
+                        "Accounting-Output-Packets": {},
+                        "Acct-Session-Time": {},
+                        "Called-Station-Id": {},
+                        "Calling-Station-Id": {},
+                        "Connect-Info": {},
+                        "Session-Timeout": {},
+                        "Idle-Timeout": {}, 
+                        "Acct-Interim-Interval": {},
+                        "Filter-Id": {},
+                        "NAS-Filter-Rule": {},
+                        "QoS-Filter-Rule": {},
+                        "Framed-Interface-Id": {},
+                        "Framed-IP-Address": {},
+                        "Framed-IP-Netmask": {},
+                        "Framed-IPv6-Prefix": {},
+                        "Framed-IPv6-Pool": {},
+                        "Framed-IPv6-Route": {},
+						"Framed-Pool": {},
+                        "Framed-Route": {},
+                        "Tunneling":{}
+					},
+					"response": 
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Result-Code": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm": {"minOccurs": 1, "maxOccurs": 1},
+                        "Accounting-Record-Type": {},
+                        "Accounting-Record-Number": {},
+                        "Acct-Application-Id": {},
+                        "User-Name": {},
+                        "Accounting-Sub-Session-Id": {},
+                        "Acct-Session-Id": {},
+                        "Acct-Multi-Session-Id": {},
+                        "Event-Timestamp": {},
+                        "Error-Message": {},
+                        "Failed-AVP": {},
+                        "Origin-State-Id": {},
+                        "NAS-Identifier": {},
+                        "NAS-IP-Address": {},
+                        "NAS-IPv6-Address": {},
+                        "NAS-Port": {},
+                        "NAS-Port-Id": {},
+                        "NAS-Port-Type": {},
+                        "Service-Type": {},
+                        "Termination-Cause": {},
+                        "Acct-Interim-Interval": {},
+                        "Class": {},
+                        "Proxy-Info": {}
+					}
+				}
+			]
+		},
+		{
+			"name":"Accounting",
+			"code": 3,
+			"appType": "acct",
+			"commands":
+			[
+				{
+					"code": 271,
+					"name": "Accounting",
+					"request":
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Destination-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Accounting-Record-Type":{"minOccurs": 1, "maxOccurs": 1},
+						"Accounting-Record-Number":{"minOccurs": 1, "maxOccurs": 1},
+						"Acct-Application-Id":{"maxOccurs": 1},
+						"Vendor-Specific-Application-Id":{"maxOccurs": 1},
+						"User-Name":{"maxOccurs": 1},
+						"Accounting-Sub-Session-Id":{"maxOccurs": 1},
+						"Acct-Session-Id":{"maxOccurs": 1},
+						"Acct-Multi-Session-Id":{"maxOccurs": 1},
+						"Acct-Interim-Interval":{"maxOccurs": 1},
+						"Accounting-Realtime-Required":{"maxOccurs": 1},
+						"Origin-State-Id":{"maxOccurs": 1},
+						"Event-Timestamp":{"maxOccurs": 1},
+						"Proxy-Info":{},
+						"Route-Record":{},
+						"AVP":{}
+					},
+					"response":
+					{
+						"Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+						"Result-Code":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host":{"minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+						"Accounting-Record-Type":{"minOccurs": 1, "maxOccurs": 1},
+						"Accounting-Record-Number":{"minOccurs": 1, "maxOccurs": 1},
+						"Acct-Application-Id":{"maxOccurs": 1},
+						"Vendor-Specific-Application-Id":{"maxOccurs": 1},
+						"User-Name":{"maxOccurs": 1},
+						"Accounting-Sub-Session-Id":{"maxOccurs": 1},
+						"Acct-Session-Id":{"maxOccurs": 1},
+						"Acct-Multi-Session-Id":{"maxOccurs": 1},
+						"Error-Reporting-Host":{"maxOccurs": 1},
+						"Acct-Interim-Interval":{"maxOccurs": 1},
+						"Accounting-Realtime-Required":{"maxOccurs": 1},
+						"Origin-State-Id":{"maxOccurs": 1},
+						"Event-Timestamp":{"maxOccurs": 1},
+						"Proxy-Info":{},
+						"AVP":{}
+					}
+				}
+			]
+		},
+		{
+			"name":"Credit-Control",
+			"code": 4,
+			"appType": "auth",
+			"commands":
+			[
+				{
+					"code": 272,
+					"name": "Credit-Control",
+					"request":
+					{
+						"Session-Id": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Origin-Host": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Origin-Realm": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Destination-Realm": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Destination-Host": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Auth-Application-Id": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+						"Service-Context-Id": {"mandatory": true},
+                        "CC-Request-Type": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Number" : {"mandatory": true,"minOccurs": 1, "maxOccurs": 1},
+                        "User-Name": {},
+                        "CC-Sub-Session-Id": {},
+                        "Acct-Multi-Session-Id": {},
+                        "Origin-State-Id": {},
+                        "Event-Timestamp": {},
+                        "Subscription-Id": {"mandatory": true},
+                        "Service-Identifier": {},
+                        "Termination-Cause": {},
+                        "Requested-Service-Unit": {},
+                        "Requested-Action": {},
+                        "Used-Service-Unit": {},
+                        "Multiple-Services-Indicator": {},
+                        "Multiple-Services-Credit-Control": {},
+                        "Service-Parameter-Info": {},
+                        "CC-Correlation-Id": {},
+                        "User-Equipment-Info": {},
+                        "Proxy-Info": {},
+                        "Route-Record": {},
+                        "AVP": {}
+					},
+                    "response":
+                    {
+                        "Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "Result-Code":{"minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Host":{"minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Application-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Type":{"minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Number":{"minOccurs": 1, "maxOccurs": 1},
+						"User-Name": {},
+						"CC-Session-Failover": {},
+						"CC-Sub-Session-Id": {},
+						"Acct-Multi-Session-Id": {},
+						"Origin-State-Id": {},
+						"Event-Timestamp": {},
+						"Granted-Service-Unit": {},
+						"Multiple-Services-Credit-Control": {},
+						"Cost-Information": {},
+						"Final-Unit-Indication": {},
+						"Check-Balance-Result": {},
+						"Credit-Control-Failure-Handling": {},
+						"Direct-Debiting-Failure-Handling": {},
+						"Validity-Time": {},
+						"Redirect-Host": {},
+						"Redirect-Host-Usage": {},
+						"Redirect-Max-Cache-Time": {},
+						"Proxy-Info": {},
+						"Route-Record": {},
+						"Failed-AVP": {},
+                        "AVP":{}
+                     }
+				}
+			]
+		},
+        {
+            "name":"Gx",
+            "code": 16777238,
+            "appType": "auth",
+            "commands":
+            [
+                {
+                    "code": 272,
+                    "name": "Credit-Control",
+                    "request":
+                    {
+                        "Session-Id":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Host": {"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Destination-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Destination-Host":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Application-Id":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Type":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Number":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Origin-State-Id":{},
+                        "Subscription-Id":{},
+                        "3GPP-Bearer-Identifier":{"maxOccurs": 1},
+                        "3GPP-IP-CAN-Type":{"maxOccurs": 1},
+                        "3GPP-3G-RAT-Type":{"maxOccurs": 1},
+                        "3GPP-QoS-Information":{"maxOccurs": 1},
+                        "3GPP-Default-EPS-Bearer-QoS":{"maxOccurs": 1},
+                        "3GPP-AN-GW-Address":{"maxOccurs": 2},
+                        "3GPP-QoS-Rule-Report":{},
+                        "3GPP-Event-Trigger":{},
+                        "Framed-IP-Address":{},
+                        "Framed-IPv6-Prefix":{},
+                        "AVP":{}
+                    },
+                    "response":
+                    {
+                        "Session-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "Result-Code":{"minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Host":{"minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Realm":{"minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Application-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Type":{"minOccurs": 1, "maxOccurs": 1},
+                        "CC-Request-Number":{"minOccurs": 1, "maxOccurs": 1},
+                        "3GPP-Charging-Rule-Remove":{},
+                        "3GPP-Charging-Rule-Install":{},
+                        "3GPP-QoS-Information":{},
+                        "3GPP-Online":{"maxOccurs": 1},
+                        "3GPP-Offline":{"maxOccurs": 1},
+                        "3GPP-Revalidation-Time":{"maxOccurs": 1},
+                        "Proxy-Info":{},
+                    	"Route-Record":{},
+                        "AVP":{}
+                    }
+                }
+            ]
+        },
+        {
+            "name":"TestApplication",
+            "code": 1000,
+            "appType": "auth",
+            "commands":
+            [
+                {
+                    "code": 2000,
+                    "name": "TestRequest",
+                    "request":
+                    {
+                        "Session-Id":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Origin-Host": {"mandatory": true, "maxOccurs": 1},
+                        "Origin-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Destination-Realm":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Auth-Application-Id":{"mandatory": true, "minOccurs": 1, "maxOccurs": 1},
+                        "Vendor-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "Subscription-Id":{"minOccurs": 1, "maxOccurs": 1},
+                        "Framed-IP-Address":{},
+                        "Igor-Command":{},
+                        "Igor-myTestAllGrouped": {}
+                    },
+                    "response":
+                    {
+                    }
+                }
+            ]
+        }
+	]
+}

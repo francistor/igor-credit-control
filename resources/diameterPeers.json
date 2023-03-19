@@ -1,0 +1,10 @@
+{
+	"cc.client":{
+		"IPAddress": "localhost",
+        "port": 43868,
+		"connectionPolicy": "passive",
+		"connectionTimeoutMillis": 5000,
+		"watchdogIntervalMillis": 300000,
+		"originNetwork": "0.0.0.0/0"
+	}
+}

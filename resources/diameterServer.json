@@ -1,0 +1,10 @@
+{
+	"bindAddress": "127.0.0.1",
+	"bindPort": 33868,
+	"diameterHost": "cc.server",
+	"diameterRealm": "minsait",
+	"vendorId": 1101,
+	"productName": "iAAA",
+	"firmwareRevision": 1,
+	"peerCheckTimeSeconds": 120
+}

@@ -1,0 +1,5 @@
+Session-Id = "session-id-1"
+Auth-Application-Id = 16777238
+CC-Request-Type = 1
+CC-Request-Number = 1
+Subscription-Id = "Subscription-Id-Type=1, Subscription-Id-Data=913374871"

@@ -1,0 +1,6 @@
+{
+    "rules": [
+        {"nameRegex": "(.*)",     "origin": ""}
+    ]
+}
+
